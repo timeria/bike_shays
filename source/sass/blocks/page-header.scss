@@ -1,0 +1,30 @@
+.page-header {
+  padding: 20px 0 10px;
+  max-width: 873.5px;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  z-index: 5;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-bottom: 1px solid $link;
+
+  @media (max-width: $tablet-width) {
+    padding: 0;
+  }
+}
+
+.page-header__logo {
+  position: absolute;
+  top: 318px;
+  z-index: 1;
+}
+
+.page-header__toggle {
+  display: none;
+
+  @media (max-width: $mobile-width) {
+    display: block;
+  }
+}

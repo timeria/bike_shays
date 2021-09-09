@@ -1,0 +1,27 @@
+.main-nav {
+  @media (max-width: $tablet-width) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 320px;
+    height: 100vh;
+    max-height: 568px;
+    background-color: $white;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 5;
+    display: none;
+  }
+}
+
+.main-nav__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-nav__close {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
