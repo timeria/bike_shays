@@ -20,8 +20,8 @@
         </svg>
       </a>
        <nav class="main-nav main-nav--active">
-        <button type="button" class="main-nav__close main-close">
-          <svg width="24" height="25">
+          <button type="button" class="page-header__close main-close">
+          <svg width="24" height="25" class="main-close__img">
             <use href="img/sprite.svg#close"></use>
           </svg>
           <span class="visually-hidden">Закрыть меню</span>
@@ -66,15 +66,99 @@
           <p class="banner__description">Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
         </div>
       </div>
-      <div class="form">
-        <p class="form__title"></p>
-        <form action="" class="main-form">
-
-        </form>
-      </div>
     </div>
   </section>
-<footer></footer>
+  <section class="form">
+    <div class="form__wrap">
+        <p class="form__title">Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
+        <form action="" class="main-form">
+          <input type="text" class="main-form__input" placeholder="Введите Ваше Имя">
+          <input type="tel" class="main-form__input" placeholder="Введите Ваш номер телефона">
+          <button type="submit" class="button main-form__button">Подобрать велосипед мечты</button>
+        </form>
+      </div>
+  </section>
+  <section class="about">
+    <div class="about__container">
+    <h2 class="main-title">
+      Несколько фактов о нас
+    </h2>
+    <ul class="about__list">
+      <li class="about__item">
+        <span class="about__number">01</span>
+        <p class="about__text">Самый широкий выбор велосипедов!</p>
+      </li>
+      <li class="about__item">
+        <span class="about__number">02</span>
+        <p class="about__text">Доставка велосипедов по всей России!</p>
+      </li>
+      <li class="about__item">
+        <span class="about__number">03</span>
+        <p class="about__text">Большой выбор крутых аксессуаров!</p>
+      </li>
+      <li class="about__item">
+        <span class="about__number">04</span>
+        <p class="about__text">Профессиональные консультации!</p>
+      </li>
+    </ul>
+  </div>
+  </section>
+  <section class="products">
+    <div class="products__container">
+      <h2 class="products__title main-title">Виды велосипедов</h2>
+    <ul class="products__list">
+      <li class="products__item">
+        <picture>
+          <source type="image/webp" media="(min-width: 1024px)" srcset="img/bike-1.webp 1x, img/bike-1@2x.webp 2x">
+            <source type="image/webp" media="(max-width: 1023px)" srcset="img/bike-1-tablet.webp 1x, img/bike-1-tablet@2x.webp 2x">
+              <source media="(max-width: 1023px)" srcset="img/bike-1.jpg 1x, img/bike-1@2x.jpg 2x">
+                <img src="img/bike-1.jpg" alt="Дорожный велосипед" width="342" height="503" srcset="img/bike-1@2x.jpg 2x" class="products__img">
+              </picture>
+              <h3 class="products__name">Дорожный велосипед</h3>
+            </li>
+            <li class="products__item">
+        <picture>
+          <source type="image/webp" media="(min-width: 1024px)" srcset="img/bike-2.webp 1x, img/bike-2@2x.webp 2x">
+            <source type="image/webp" media="(max-width: 1023px)" srcset="img/bike-2-tablet.webp 1x, img/bike-2-tablet@2x.webp 2x">
+              <source media="(max-width: 1023px)" srcset="img/bike-2.jpg 1x, img/bike-2@2x.jpg 2x">
+                <img src="img/bike-2.jpg" alt="Горный велосипед" width="342" height="566" srcset="img/bike-2@2x.jpg 2x" class="products__img">
+              </picture>
+              <h3 class="products__name">Горный велосипед</h3>
+            </li>
+            <li class="products__item">
+        <picture>
+          <source type="image/webp" media="(min-width: 1024px)" srcset="img/bike-3.webp 1x, img/bike-3@2x.webp 2x">
+            <source type="image/webp" media="(max-width: 1023px)" srcset="img/bike-3-tablet.webp 1x, img/bike-3-tablet@2x.webp 2x">
+              <source media="(max-width: 1023px)" srcset="img/bike-3.jpg 1x, img/bike-3@2x.jpg 2x">
+                <img src="img/bike-3.jpg" alt="Горный велосипед" width="342" height="512" srcset="img/bike-3@2x.jpg 2x" class="products__img">
+              </picture>
+              <h3 class="products__name">Детский велосипед</h3>
+            </li>
+    </ul>
+  </div>
+  </section>
+  <section class="video">
+    <div class="video__container">
+       <h2 class="video__title main-title">Видео про велосипеды</h2>
+       <div class="video__text">
+         В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.
+       </div>
+       <div class="video__block">
+        <picture>
+          <source type="image/webp" media="(min-width: 1024px)" srcset="img/video.webp 1x, img/video@2x.webp 2x">
+            <img src="img/video.jpg" alt="Видео" width="929" height="522" srcset="img/video@2x.jpg 2x" class="video__img">
+          </picture>
+        <button class="video__play" type="button"><span class="visually-hidden">Проиграть видео</span></button>
+       </div>
+    </div>
+  </section>
+<footer class="page-footer">
+  <h2 class="footer__title main-title">Как нас найти?</h2>
+  <p class="footer__text">Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
+  <div class="map">
+    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac11f0086b11c2de1f53630e0e61da8f20f87293c1e0a7a80c7f90eb1ffa5a403&amp;width=100%25&amp;height=530&amp;lang=ru_RU&amp;scroll=false"></script>
+  </div>
+</footer>
 <script src="js/script.min.js"></script>
 </body>
 </html>

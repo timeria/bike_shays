@@ -3,21 +3,26 @@
     position: absolute;
     top: 0;
     right: 0;
-    width: 320px;
+    width: 100%;
     height: 100vh;
     max-height: 568px;
-    background-color: $white;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
     z-index: 5;
+    background: $white;
     display: none;
+    align-items: center;
   }
 }
 
 .main-nav__list {
-  display: flex;
-  justify-content: space-between;
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+    margin-top: 60px;
+  }
 }
 
 .main-nav__close {

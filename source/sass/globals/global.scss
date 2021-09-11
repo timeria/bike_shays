@@ -38,3 +38,13 @@ a {
   margin: 0;
   position: relative;
 }
+
+.button {
+  border: none;
+  background: $blue;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 21px;
+  color: $black;
+}

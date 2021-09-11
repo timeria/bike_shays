@@ -1,67 +1,36 @@
 .main-form__input {
-  border: 1px solid $greytabs;
-  height: 50px;
-  padding: 0 48px 0 15px;
-  width: 48%;
-  color: $black;
-  font-size: 14px;
+  width: 100%;
+  border-radius: 6px;
+  background: $white;
+  height: 48px;
+  margin-bottom: 20px;
+  font-size: 15px;
+  line-height: 24px;
+  color: $input;
+  padding: 0 30px;
+
+  @media (min-width: $desktop-width) {
+    border: none;
+  }
 
   &::-moz-placeholder {
-    color: $black;
+    color: $input;
   }
 
   &::-webkit-input-placeholder {
-    color: $black;
+    color: $input;
   }
 
   &::-ms-input-placeholder {
-    color: $black;
+    color: $input;
   }
 
-  @media (max-width: $mobile-width) {
-    width: 100%;
+  @media (max-width: $tablet-width) {
+    border: 1px solid #C9CCD4;
   }
 }
 
-.main-form__input--error {
-  border-color: $red;
-}
-
-.main-form__req .main-form__input {
+.main-form__button {
   width: 100%;
-  padding-left: 50px;
+  padding: 15px 0;
 }
-
-.main-form__req {
-  position: relative;
-  width: 49%;
-
-  @media (max-width: $mobile-width) {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-}
-
-.main-form__req .main-form__label {
-  position: absolute;
-  left: 15px;
-  top: 15px;
-  font-size: 14px;
-  line-height: 17px;
-  color: $black;
-}
-
-.main-form__label span {
-  color: $red;
-  padding-bottom: 5px;
-}
-
-.main-form__req--full,
-.main-form__input--full {
-  width: 100%;
-}
-
-.main-form__req--full {
-  margin-bottom: 20px;
-}
-
