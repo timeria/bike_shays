@@ -48,3 +48,9 @@ a {
   line-height: 21px;
   color: $black;
 }
+
+.error-message {
+  color: $error;
+  margin-bottom: 10px;
+  font-size: 12px;
+}

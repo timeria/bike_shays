@@ -8,10 +8,7 @@
   line-height: 24px;
   color: $input;
   padding: 0 30px;
-
-  @media (min-width: $desktop-width) {
-    border: none;
-  }
+  border: 1px solid transparent;
 
   &::-moz-placeholder {
     color: $input;
@@ -33,4 +30,8 @@
 .main-form__button {
   width: 100%;
   padding: 15px 0;
+}
+
+.main-form__input.form-error {
+  border-color: $error;
 }

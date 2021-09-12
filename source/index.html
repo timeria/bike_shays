@@ -19,7 +19,8 @@
           <use href="img/sprite.svg#logo"></use>
         </svg>
       </a>
-       <nav class="main-nav main-nav--active">
+      <!-- Для переключения мобильного меню в активное состояние класс main-nav--active-->
+       <nav class="main-nav">
           <button type="button" class="page-header__close main-close">
           <svg width="24" height="25" class="main-close__img">
             <use href="img/sprite.svg#close"></use>
@@ -71,14 +72,14 @@
   <section class="form">
     <div class="form__wrap">
         <p class="form__title">Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
-        <form action="" class="main-form">
-          <input type="text" class="main-form__input" placeholder="Введите Ваше Имя">
-          <input type="tel" class="main-form__input" placeholder="Введите Ваш номер телефона">
+        <form action="https://echo.htmlacademy.ru/" class="main-form">
+          <input type="text" class="main-form__input" placeholder="Введите Ваше Имя" name="user_name" required="">
+          <input type="tel" class="main-form__input" placeholder="Введите Ваш номер телефона" name="user_phone" required="">
           <button type="submit" class="button main-form__button">Подобрать велосипед мечты</button>
         </form>
       </div>
   </section>
-  <section class="about">
+  <section class="about" id="about">
     <div class="about__container">
     <h2 class="main-title">
       Несколько фактов о нас

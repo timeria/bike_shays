@@ -4,15 +4,17 @@
     top: 0;
     right: 0;
     width: 100%;
-    height: 100vh;
-    max-height: 568px;
     z-index: 5;
     background: $white;
-    display: none;
     align-items: center;
+    display: none;
   }
 }
 
+.main-nav--active {
+  height: 100%;
+  display: block;
+}
 .main-nav__list {
   @media (min-width: $desktop-width) {
     display: flex;
