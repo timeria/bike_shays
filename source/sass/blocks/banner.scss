@@ -28,9 +28,9 @@
     background-image: url("../img/banner@2x.jpg") center top no-repeat;
   }
 
-   @media (max-width: $tablet-width) {
+  @media (max-width: $tablet-width) {
     background-position: center center;
-   }
+  }
 }
 
 .banner__container {

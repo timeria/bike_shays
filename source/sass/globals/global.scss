@@ -54,3 +54,21 @@ a {
   margin-bottom: 10px;
   font-size: 12px;
 }
+
+.main-title {
+  color: $title;
+  margin: 0;
+  font-family: 'OpenSans';
+  letter-spacing: -0.005em;
+  text-align: center;
+
+  @media (min-width: $desktop-width) {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  @media (max-width: $tablet-width) {
+    font-size: 24px;
+  }
+}
