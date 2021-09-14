@@ -47,7 +47,7 @@ const storageNameStart = "";
 
 
 try {
-  storageNameStart = localStorage.getItem("userName");
+  storageNameStart = localStorage.getItem("Name");
 } catch (err) {
   isStorageSupport = false;
 }
@@ -66,7 +66,7 @@ form.addEventListener('submit', (e) => {
   statusMessage.classList.add("error-message");
   statusMessage.innerHTML = 'Можно ввести только цифры';
 
-  if (!/^[0-9]+$/.test(userPhone.value) ) {
+  if (/^[A-Za-z]+$/.test(userPhone.value) ) {
     form.insertBefore(statusMessage, formButton);
     data = false;
   }else {
@@ -77,8 +77,8 @@ form.addEventListener('submit', (e) => {
   if (data == true) {
     form.submit();
     if(isStorageSupport) {
-      localStorage.setItem("userName", userName.value);
-      localStorage.setItem("userPhone", userPhone.value);
+      localStorage.setItem("Name", userName.value);
+      localStorage.setItem("Phone", userPhone.value);
     }
   }
 });

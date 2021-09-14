@@ -16,15 +16,18 @@
   height: 100%;
   display: block;
 }
+
 .main-nav__list {
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   @media (max-width: $tablet-width) {
     width: 100%;
-    margin-top: 60px;
+    margin-top: 50px;
+    background: $white;
   }
 }
 

@@ -7,11 +7,15 @@
   }
 
   @media (max-width: $tablet-width) {
-    padding: 146px 0 55px;
+    padding: 152px 35px 55px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 123px 0 50px;
   }
 }
 
-.footer__text {
+.page-footer__text {
   font-size: 17px;
   line-height: 31px;
   color: $text;
@@ -23,53 +27,90 @@
   }
 
   @media (max-width: $tablet-width) {
-    margin: 0 0 15px;
+    margin: 0 0 19px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 0 26px;
+    margin: 0 0 23px;
   }
 }
 
-.footer__title {
-   @media (min-width: $desktop-width) {
-    margin-bottom: 30px;
+.page-footer__title {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 27px;
   }
 
   @media (max-width: $tablet-width) {
     margin-bottom: 20px;
   }
+
+  @media (max-width: $mobile-width) {
+    font-size: 18px;
+  }
 }
 
-.footer__map {
+.page-footer__map {
   background: url('../img/map.jpg') no-repeat center;
 
   @media (min-width: $desktop-width) {
     height: 530px;
   }
+
+  @media (max-width: $tablet-width) {
+    height: 557px;
+  }
+
+  @media (max-width: $mobile-width) {
+    height: 250px;
+  }
 }
 
-.footer__contacts {
+.page-footer__contacts {
   display: flex;
   justify-content: center;
 
   @media (min-width: $desktop-width) {
-    margin-top: 40px;
+    margin-top: 37px;
   }
 
   @media (max-width: $tablet-width) {
-    margin-top: 23px;
+    margin-top: 7px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-top: 30px;
+    display: block;
+    text-align: center;
   }
 }
 
-.footer__link {
+.page-footer__link {
   font-size: 16px;
   line-height: 22px;
   color: $grey;
+  transition: color .2s;
 
   &:first-child {
     margin-right: 90px;
+
+    @media (max-width: $mobile-width) {
+      margin-right: 0;
+      margin-bottom: 25px;
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    display: inline-block;
   }
 }
 
-.footer__link svg {
+.page-footer__link:hover {
+  color: $black;
+}
+
+.page-footer__link svg {
   display: inline-block;
   vertical-align: middle;
-  margin-right: 15px;
+  margin-right: 10px;
 }

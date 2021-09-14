@@ -6,9 +6,10 @@
   margin-bottom: 20px;
   font-size: 15px;
   line-height: 24px;
-  color: $input;
-  padding: 0 30px;
+  color: $black;
+  padding: 0 27px;
   border: 1px solid transparent;
+  transition: all .3s;
 
   &::-moz-placeholder {
     color: $input;
@@ -23,8 +24,14 @@
   }
 
   @media (max-width: $tablet-width) {
-    border: 1px solid #C9CCD4;
+    border: 1px solid $border;
+    padding: 0 23px;
   }
+}
+
+.main-form__input:focus {
+  border-color: $blue;
+  outline: none;
 }
 
 .main-form__button {

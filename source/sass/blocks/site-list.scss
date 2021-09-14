@@ -22,13 +22,14 @@
 
 @media (min-width: $desktop-width) {
   .site-list__item:first-child {
-    margin-left: 10px;
+    margin-left: 15px;
   }
 
   .site-list__item:last-child {
-    margin-right: 10px;
+    margin-right: 22px;
   }
 }
+
 @media (max-width: $tablet-width) {
   .site-list__item {
     padding: 16px 35px 16px 15px;
@@ -36,22 +37,22 @@
     margin-bottom: 30px;
     position: relative;
 
-  &::after,
-  &::before {
-    @include beforeAfter;
-    background-color: $arrow;
-    width: 2px;
-    height: 9px;
-    top:43%;
-    right: 25px;
-  }
+    &::after,
+    &::before {
+      @include beforeAfter;
+      background-color: $arrow;
+      width: 2px;
+      height: 9px;
+      top:43%;
+      right: 25px;
+    }
 
-  &::after {
-    transform: translate(-50%, -3px) rotate(-45deg);
-  }
+    &::after {
+      transform: translate(-50%, -3px) rotate(-45deg);
+    }
 
-  &::before {
-    transform: translate(-50%, 3px) rotate(45deg);
+    &::before {
+      transform: translate(-50%, 3px) rotate(45deg);
+    }
   }
-}
 }
