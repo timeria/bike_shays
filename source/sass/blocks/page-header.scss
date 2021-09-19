@@ -19,18 +19,18 @@
 @media (max-width: $tablet-width) {
   .page-header--active {
     height: 100vh;
-    position:fixed;
+    position: fixed;
     overflow-y: auto;
   }
 }
 
 .page-header__logo {
   @media (min-width: $desktop-width) {
-   position: absolute;
-   top: 318px;
-   left: -4px;
-   z-index: 1;
- }
+    position: absolute;
+    top: 318px;
+    left: -4px;
+    z-index: 1;
+  }
 
   @media (max-width: $tablet-width) {
     margin: 25px 0 0 21px;

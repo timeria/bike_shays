@@ -1,5 +1,4 @@
 .page-footer {
-
   @media (min-width: $desktop-width) {
     max-width: 957px;
     margin: 0 auto;
@@ -15,7 +14,7 @@
   }
 }
 
-.page-footer__text {
+.page-footer p {
   font-size: 17px;
   line-height: 31px;
   color: $text;
@@ -51,7 +50,7 @@
 }
 
 .page-footer__map {
-  background: url('../img/map.jpg') no-repeat center;
+  background: url("../img/map.jpg") no-repeat center;
 
   @media (min-width: $desktop-width) {
     height: 530px;
@@ -89,7 +88,7 @@
   font-size: 16px;
   line-height: 22px;
   color: $grey;
-  transition: color .2s;
+  transition: color 0.2s;
 
   &:first-child {
     margin-right: 90px;
@@ -102,6 +101,7 @@
 
   @media (max-width: $mobile-width) {
     display: inline-block;
+    vertical-align: middle;
   }
 }
 
@@ -113,4 +113,8 @@
   display: inline-block;
   vertical-align: middle;
   margin-right: 10px;
+}
+
+.page-footer__map iframe {
+  max-width: 100%;
 }

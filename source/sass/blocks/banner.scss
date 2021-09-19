@@ -21,7 +21,7 @@
   height: 100%;
   top: 0;
   left: 0;
-  background: url('../img/banner.jpg') center top no-repeat;
+  background: url("../img/banner.jpg") center top no-repeat;
   background-size: cover;
 
   @media (min-resolution: 2dppx) {
@@ -67,7 +67,7 @@
   }
 }
 
-.banner__title {
+.banner__text h1 {
   margin: 0 0 20px;
 
   @media (min-width: $desktop-width) {
@@ -85,7 +85,7 @@
   }
 }
 
-.banner__description {
+.banner__text p {
   margin: 0;
 
   @media (min-width: $desktop-width) {

@@ -68,9 +68,9 @@
     margin-right: 30px;
 
     &:nth-child(2n+2) {
-     margin-right: 0;
-   }
- }
+      margin-right: 0;
+    }
+  }
 
   @media (max-width: $mobile-width) {
     width: 100%;
@@ -96,7 +96,7 @@
   }
 }
 
-.about__text {
+.about__item p {
   margin: 0;
   line-height: 34px;
 

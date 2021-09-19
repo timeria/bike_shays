@@ -6,7 +6,7 @@
     letter-spacing: -0.005em;
     color: $white;
     opacity: 0.7;
-    transition: opacity .2s;
+    transition: opacity 0.2s;
   }
 
   @media (max-width: $tablet-width) {
@@ -43,7 +43,7 @@
       background-color: $arrow;
       width: 2px;
       height: 9px;
-      top:43%;
+      top: 43%;
       right: 25px;
     }
 
