@@ -51,7 +51,7 @@
   }
 }
 
-.form__input {
+.form__wrap input {
   width: 100%;
   border-radius: 6px;
   background: $white;
@@ -82,16 +82,25 @@
   }
 }
 
-.form__input:focus {
+.form__wrap input:focus {
   border-color: $blue;
   outline: none;
 }
 
-.form__button {
+.form__wrap button {
   width: 100%;
   padding: 15px 0;
+  border: none;
+  background: #0ad9c6;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 21px;
+  color: #141517;
+  cursor: pointer;
+  transition: all 0.3s;
 }
 
-.form__input.form-error {
-  border-color: $error;
+.form__wrap label {
+  display: none;
 }
