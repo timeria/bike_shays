@@ -3,18 +3,19 @@
 <head>
   <meta charset="utf-8">
   <title>Велосипеды</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Мы продаем велосипеды">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="page-body">
   <header class="page-header">
-    <a class="page-header__logo">
+    <a href="!#" class="page-header__logo" aria-label="Ссылка на главную страницу">
       <svg width="68" height="21">
         <use href="img/sprite.svg#logo"></use>
       </svg>
     </a>
     <!--Для переключения мобильного меню в активное состояние класс main-nav--active-->
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--active">
       <button type="button" class="page-header__close main-close">
         <svg width="24" height="25" class="main-close__img">
           <use href="img/sprite.svg#close"></use>
@@ -63,7 +64,7 @@
     </section>
     <section class="form">
       <div class="form__wrap">
-        <h4 class="form__title">Заполните поля ниже и мы подберем велосипед Вашей мечты</h4>
+        <h2 class="form__title">Заполните поля ниже и мы подберем велосипед Вашей мечты</h2>
         <form action="https://echo.htmlacademy.ru/">
           <label for="user_name">Введите Ваше Имя</label>
           <input type="text" placeholder="Введите Ваше Имя" name="user_name" required="" id="user_name">
@@ -164,27 +165,28 @@
                               </div>
                             </div>
                           </section>
-                          <footer class="page-footer" id="contacts">
-                            <h2 class="page-footer__title main-title">Как нас найти?</h2>
-                            <p>Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
-                            <div class="page-footer__map map">
-                              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1188.4768583468672!2d30.322490928069257!3d59.93592773072087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310f5d74374b%3A0x4c99c81620f2ac9c!2z0JTQvtC8INC60L3QuNCz0Lg!5e0!3m2!1sru!2sru!4v1613925655919!5m2!1sru!2sru" width="957" height="530" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                            </div>
-                            <div class="page-footer__contacts">
-                              <a href="mailto:puteshestviemechta@gmail.ru" class="page-footer__link">
-                                <svg width="26" height="20">
-                                  <use href="img/sprite.svg#mail"></use>
-                                </svg>
-                              puteshestviemechta@gmail.ru</a>
-                              <a href="tel:+749978468446" class="page-footer__link">
-                                <svg width="17" height="24">
-                                  <use href="img/sprite.svg#phone"></use>
-                                </svg>
-                                +7 (499) -784-684-46
-                              </a>
-                            </div>
-                          </footer>
                         </main>
+                        <footer class="page-footer" id="contacts">
+                          <h2 class="page-footer__title main-title">Как нас найти?</h2>
+                          <p>Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
+                          <div class="page-footer__map map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1188.4768583468672!2d30.322490928069257!3d59.93592773072087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310f5d74374b%3A0x4c99c81620f2ac9c!2z0JTQvtC8INC60L3QuNCz0Lg!5e0!3m2!1sru!2sru!4v1613925655919!5m2!1sru!2sru" width="957" height="530" style="border:0;" allowfullscreen="" loading="lazy" title="Карта"></iframe>
+                          </div>
+                          <div class="page-footer__contacts">
+                            <a href="mailto:puteshestviemechta@gmail.ru" class="page-footer__link page-footer__link--mail">
+                              <svg width="26" height="20">
+                                <use href="img/sprite.svg#mail"></use>
+                              </svg>
+                              <span>puteshestviemechta@gmail.ru</span>
+                            </a>
+                            <a href="tel:+749978468446" class="page-footer__link page-footer__link--phone">
+                              <svg width="17" height="24">
+                                <use href="img/sprite.svg#phone"></use>
+                              </svg>
+                              <span>+7 (499) -784-684-46</span>
+                            </a>
+                          </div>
+                        </footer>
                         <script src="js/script.js"></script>
                       </body>
                       </html>

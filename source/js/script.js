@@ -1,23 +1,3 @@
-//Плавная прокрутка по якорю
-const scrollAnchors = (elem) => {
-  if(elem) {
-    const anchors = document.querySelectorAll(elem)
-
-    for (let anchor of anchors) {
-      anchor.addEventListener('click', (e) => {
-        e.preventDefault()
-
-        const blockID = anchor.getAttribute('href')
-
-        document.querySelector(blockID).scrollIntoView({
-          behavior: 'smooth',
-          block: 'start'
-        })
-      })
-    }
-  }
-}
-
 const phoneValidate = (elem) => {
   if(elem) {
     elem.addEventListener('input', () => {
@@ -35,8 +15,6 @@ const phoneValidate = (elem) => {
 
 window.addEventListener('DOMContentLoaded' , () => {
 
-  scrollAnchors('.site-list__link');
-
   //Мобильное меню
 
   const headerBlock = document.querySelector('.page-header');
@@ -45,11 +23,15 @@ window.addEventListener('DOMContentLoaded' , () => {
   const buttonClose = headerBlock.querySelector('.page-header__close');
   const body = document.querySelector('.page-body');
 
+  if(headerMenu) {
+    headerMenu.classList.remove('main-nav--active');
+  }
 
   if(buttonOpen) {
     buttonOpen.addEventListener('click', (event) => {
       headerBlock.classList.add('page-header--active');
       headerMenu.classList.add('main-nav--active');
+      body.classList.add('page-body--active');
     });
   }
 
@@ -57,8 +39,35 @@ window.addEventListener('DOMContentLoaded' , () => {
     buttonClose.addEventListener('click', () => {
       headerBlock.classList.remove('page-header--active');
       headerMenu.classList.remove('main-nav--active');
+      body.classList.remove('.page-body--active');
     });
   }
+
+  //Плавная прокрутка по якорю
+
+  if('.site-list__link') {
+    const anchors = document.querySelectorAll('.site-list__link')
+
+    for (let anchor of anchors) {
+      anchor.addEventListener('click', (e) => {
+        e.preventDefault()
+
+        if(body.classList.contains('page-body--active')) {
+          body.classList.remove('page-body--active');
+          headerBlock.classList.remove('page-header--active');
+          headerMenu.classList.remove('main-nav--active');
+        };
+
+        const blockID = anchor.getAttribute('href')
+
+        document.querySelector(blockID).scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        })
+      })
+    }
+  }
+
 
   //Форма
 
@@ -69,31 +78,12 @@ window.addEventListener('DOMContentLoaded' , () => {
     const formButton = form.querySelector('.form__button');
 
     let isStorageSupport = true;
-    const storageNameStart = '';
-    const storagePhoneStart = '';
-
 
     try {
       storageNameStart = localStorage.getItem('userName');
       storagePhoneStart = localStorage.getItem('userPhone');
     } catch (err) {
       isStorageSupport = false;
-    }
-
-    if(userName){
-      if (storageNameStart) {
-        userName.value = storageNameStart;
-        userName.focus();
-      } else {
-        userName.focus();
-      }
-    } else {
-      if (storagePhoneStart) {
-        userPhone.value = storagePhoneStart;
-        userPhone.focus();
-      } else {
-        userPhone.focus();
-      }
     }
 
     phoneValidate(userPhone);

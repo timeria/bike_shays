@@ -26,6 +26,10 @@
     max-width: 324px;
     margin: 0 auto;
   }
+
+  @media (max-width: $mobile-width) {
+    max-width: 100%;
+  }
 }
 
 .form__title {
