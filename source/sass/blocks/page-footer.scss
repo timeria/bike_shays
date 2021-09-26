@@ -2,7 +2,7 @@
   @media (min-width: $desktop-width) {
     max-width: 957px;
     margin: 0 auto;
-    padding: 246px 0 72px;
+    padding: 244px 0 72px;
   }
 
   @media (max-width: $tablet-width) {
@@ -71,7 +71,7 @@
   flex-wrap: wrap;
 
   @media (min-width: $desktop-width) {
-    margin-top: 37px;
+    margin-top: 40px;
   }
 
   @media (max-width: $tablet-width) {
@@ -95,13 +95,25 @@
   position: relative;
   padding-left: 33px;
   margin: 0 50px 25px;
+}
 
-  .page-footer__link--mail {
-    padding-left: 41px;
+.page-footer__link--mail {
+  padding-left: 41px;
+  margin-left: 34px;
 
-    @media (max-width: $mobile-width) {
-      margin-right: 0;
-    }
+  @media (max-width: $mobile-width) {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+.page-footer__link--phone {
+  margin-left: 48px;
+  padding-left: 32px;
+
+  @media (max-width: $mobile-width) {
+    margin-right: 0;
+    margin-left: 0;
   }
 }
 

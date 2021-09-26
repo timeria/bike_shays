@@ -94,3 +94,28 @@ a {
     font-size: 24px;
   }
 }
+
+@media (max-width: $tablet-width) {
+  .page-body--menu .page-header,
+  .page-body--menu .main-nav {
+    position: relative;
+  }
+
+  .page-body--menu .page-header {
+    display: block;
+  }
+
+  .page-body--menu .main-nav {
+    display: block;
+  }
+
+  .page-body--menu .page-header__toggle {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .page-body--menu .page-header__logo {
+    display: block;
+  }
+}

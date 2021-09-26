@@ -23,8 +23,8 @@ window.addEventListener('DOMContentLoaded' , () => {
   const buttonClose = headerBlock.querySelector('.page-header__close');
   const body = document.querySelector('.page-body');
 
-  if(headerMenu) {
-    headerMenu.classList.remove('main-nav--active');
+  if(body) {
+    body.classList.remove('page-body--menu');
   }
 
   if(buttonOpen) {

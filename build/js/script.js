@@ -23,8 +23,8 @@ window.addEventListener('DOMContentLoaded' , () => {
   const buttonClose = headerBlock.querySelector('.page-header__close');
   const body = document.querySelector('.page-body');
 
-  if(headerMenu) {
-    headerMenu.classList.remove('main-nav--active');
+  if(body) {
+    body.classList.remove('page-body--menu');
   }
 
   if(buttonOpen) {
@@ -78,31 +78,12 @@ window.addEventListener('DOMContentLoaded' , () => {
     const formButton = form.querySelector('.form__button');
 
     let isStorageSupport = true;
-    const storageNameStart = '';
-    const storagePhoneStart = '';
-
 
     try {
       storageNameStart = localStorage.getItem('userName');
       storagePhoneStart = localStorage.getItem('userPhone');
     } catch (err) {
       isStorageSupport = false;
-    }
-
-    if(userName){
-      if (storageNameStart) {
-        userName.value = storageNameStart;
-
-      } else {
-
-      }
-    } else {
-      if (storagePhoneStart) {
-        userPhone.value = storagePhoneStart;
-        userPhone.focus();
-      } else {
-        userPhone.focus();
-      }
     }
 
     phoneValidate(userPhone);
