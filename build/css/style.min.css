@@ -118,9 +118,7 @@ a {
   .page-body--menu .main-nav {
     display: block; }
   .page-body--menu .page-header__toggle {
-    position: absolute;
-    top: 0;
-    right: 0; }
+    display: none; }
   .page-body--menu .page-header__logo {
     display: block; } }
 
@@ -724,10 +722,12 @@ a {
 .products__img img {
   position: relative;
   z-index: 2; }
+  @media (max-width: 1300px) {
+    .products__img img {
+      height: auto; } }
   @media (max-width: 1023px) {
     .products__img img {
-      width: 269px;
-      height: auto; } }
+      width: 269px; } }
 
 @media (max-width: 1200px) {
   height: auto; }
